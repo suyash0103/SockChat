@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -56,22 +58,31 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             try {
-                Socket client = serverSocket.accept();
-                DataOutputStream os = new
-                        DataOutputStream(client.getOutputStream());
-                str = smessage.getText().toString();
-                msg = msg + "\n Server : " + str;
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        chat.setText(msg);
-                    }
-                });
-                os.writeBytes(str);
-                os.flush();
-                os.close();
-                client.close();
+                if(serverSocket != null)
+                {
+                    Socket client = serverSocket.accept();
+                    DataOutputStream os = new
+                            DataOutputStream(client.getOutputStream());
+                    str = smessage.getText().toString();
+                    msg = msg + "\n Server : " + str;
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            chat.setText(msg);
+                        }
+                    });
+                    os.writeBytes(str);
+                    os.flush();
+                    os.close();
+                    client.close();
+                }
+                else
+                {
+                    Log.v("No Client to connect", "No Client to connect");
+                    
+                }
             } catch (IOException e) {
+                Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
             }
         }
     }
