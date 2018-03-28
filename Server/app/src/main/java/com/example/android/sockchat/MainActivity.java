@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     EditText smessage;
     TextView chat, display_status;
     String str, msg = "";
-    int serverport = 10000;
+    int serverport = 8000;
     ServerSocket serverSocket;
     Socket client;
     Handler handler = new Handler();
@@ -58,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             try {
-                if(serverSocket != null)
-                {
+                if (serverSocket != null) {
                     Socket client = serverSocket.accept();
                     DataOutputStream os = new
                             DataOutputStream(client.getOutputStream());
@@ -75,11 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     os.flush();
                     os.close();
                     client.close();
-                }
-                else
-                {
+                } else {
                     Log.v("No Client to connect", "No Client to connect");
-                    
                 }
             } catch (IOException e) {
                 Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
@@ -100,9 +96,6 @@ public class MainActivity extends AppCompatActivity {
                             display_status.setText("Connected");
                         }
                     });
-/*******************************************
- setup i/p streams
- ******************************************/
                     DataInputStream in = new
                             DataInputStream(client.getInputStream());
                     String line = null;
