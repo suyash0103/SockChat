@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,6,7,5,4",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "56,224,269,169,102",
+                        "endColumns": "45,44,41,54,66",
+                        "endOffsets": "97,264,306,219,164"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "672,718,763,805,860",
+                        "endColumns": "45,44,41,54,66",
+                        "endOffsets": "713,758,800,855,922"
+                    }
+                },
+                {
+                    "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2,11,9,12,8,3,4,14,10,5,13,6,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,484,387,530,342,99,149,626,433,205,577,257,302",
+                        "endColumns": "43,45,45,46,44,49,55,45,50,51,48,44,39",
+                        "endOffsets": "94,525,428,572,382,144,200,667,479,252,621,297,337"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,99,145,191,238,283,333,389,435,486,538,587,632",
+                        "endColumns": "43,45,45,46,44,49,55,45,50,51,48,44,39",
+                        "endOffsets": "94,140,186,233,278,328,384,430,481,533,582,627,667"
+                    }
+                },
+                {
+                    "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,5",
+                        "startOffsets": "18,181,425",
+                        "endLines": "4,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "174,414,586"
+                    },
+                    "to": {
+                        "startLines": "20,23,27",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "927,1088,1326",
+                        "endLines": "22,26,29",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "1083,1321,1487"
+                    }
+                }
+            ]
+        }
+    ]
+}

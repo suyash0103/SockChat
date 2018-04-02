@@ -12,11 +12,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Vector;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     Socket client;
     Handler handler = new Handler();
     WifiManager wmanager;
+
+    // counter for clients
+    static int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,8 +104,13 @@ public class MainActivity extends AppCompatActivity {
                     });
                     DataInputStream in = new
                             DataInputStream(client.getInputStream());
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
                     String line = null;
-                    while ((line = in.readLine()) != null) {
+//                    Log.v("AAAAAAAAA", in.toString());
+//                    String x = in.readLine();
+//                    Log.v("BBBBBBBb", x);
+                    while (bufferedReader.readLine() != null) {
+                        line = bufferedReader.readLine();
                         msg = msg + "\n Client : " + line;
                         handler.post(new Runnable() {
                             @Override
@@ -110,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     in.close();
                     client.close();
-                    Thread.sleep(100);
+                    Thread.sleep(100000);
                 }
             } catch (Exception e) {
             }

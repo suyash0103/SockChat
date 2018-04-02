@@ -11,9 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.Socket;
 
@@ -118,8 +120,12 @@ public class MainActivity extends AppCompatActivity {
                     Socket socket = new Socket(serverAddr, 8000);
                     DataInputStream in = new
                             DataInputStream(socket.getInputStream());
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
                     String line = null;
-                    while ((line = in.readLine()) != null){
+//                    Log.v("AAAAAAAAA", in.toString());
+//                    String x = in.readLine();
+//                    Log.v("BBBBBBBb", x);
+                    while ((line = bufferedReader.readLine()) != null){
                         msg = msg + "Server : " + line + "\n";
                         handler.post(new Runnable(){
                             @Override

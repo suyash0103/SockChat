@@ -1,0 +1,5 @@
+<root>
+    <item name='java.io.DataInputStream java.lang.String readLine()'>
+        <annotation name='android.support.annotation.NonNull' />
+    </item>
+</root>

@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable_ic_launcher.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable_tile_bg.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable/tile_bg.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/layout_list_item_message_right.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/layout/list_item_message_right.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable-hdpi_connect_button.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable-hdpi/connect_button.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable_bg_msg_you.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable/bg_msg_you.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable_bg_msg_from.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable/bg_msg_from.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/layout_list_item_message_left.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/layout/list_item_message_left.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/layout_activity_name.xml.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/layout/activity_name.xml"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable-hdpi_logo.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable-hdpi/logo.png"
+    },
+    {
+        "merged": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/build/intermediates/res/merged/debug/drawable_bg_messages.png.flat",
+        "source": "/home/suyash/Projects/SockChat/android-socket-chatapp/app/src/main/res/drawable/bg_messages.png"
+    }
+]
